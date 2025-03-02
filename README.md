@@ -31,6 +31,9 @@ The problem involved segmenting and counting the number of coins in an image usi
 For 2 coins:
 ![Image](https://github.com/user-attachments/assets/7f14aee4-7f58-492a-952a-9b6ff6292916)
 
+For 3 coins:
+![Image](https://github.com/user-attachments/assets/c5201d6d-bc67-421f-b2e5-a477b7dac51c)
+
 # Q2: Creating a stitched panorama from multiple overlapping images
 
 ## Overview
