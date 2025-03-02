@@ -7,10 +7,8 @@ NumPy
 Matplotlib
 You can install the required libraries using:
 
-bash
-Copy
-Edit
 pip install opencv-python numpy matplotlib
+
 # Q1: Coin Segmentation using OpenCV
 ## Overview
 The problem involved segmenting and counting the number of coins in an image using OpenCV. The approach includes grayscale conversion, smoothing, thresholding, edge detection, and contour detection to identify coin boundaries.
