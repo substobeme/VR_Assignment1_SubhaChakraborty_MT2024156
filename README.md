@@ -1,3 +1,18 @@
+Requirements
+
+Ensure you have the following dependencies installed:
+
+Python 3.x
+OpenCV (cv2)
+NumPy
+Matplotlib
+
+You can install the required libraries using:
+
+pip install opencv-python numpy matplotlib
+
+
+
 ## Q1: Coin Segmentation using OpenCV
 
 ## Overview
