@@ -21,11 +21,15 @@ The problem involved segmenting and counting the number of coins in an image usi
 - Grayscale Conversion: I convert the image to grayscale to simplify processing, as color is not required for segmentation.
 - Gaussian Blur: I apply a 5x5 Gaussian kernel to smoothen the image, reducing noise and minor variations that could affect thresholding.
 - Edge Detection: Before thresholding, I use Canny edge detection to highlight regions with sharp intensity changes, which helps in detecting coin boundaries more accurately. I set threshold values (100, 200) to capture significant edges while reducing noise.
-- Dynamic Thresholding : Instead of setting a fixed threshold, I use Otsu’s thresholding (cv2.THRESH_BINARY + cv2.THRESH_OTSU). This method dynamically determines the optimal threshold value by analyzing the image histogram, ensuring robust segmentation across varying lighting conditions. Since this technique classifies pixels into foreground and background regions based on intensity, it falls under region-based segmentation.
+- Dynamic Thresholding : Instead of setting a fixed threshold, I use Otsu’s thresholding (cv2.THRESH_BINARY + cv2.THRESH_OTSU). This method dynamically determines the optimal threshold value by analyzing the image histogram, ensuring robust segmentation across varying lighting conditions. 
 - Contour Detection: Using cv2.findContours(), I identify connected components in the thresholded image. Contours are extracted from the binarized image to detect object boundaries, helping in isolating individual coins.
 - Sorting Contours by Area: I sort the detected contours in descending order based on their area to prioritize larger objects (coins) over noise.Also a form of region based segmentation as I form an area mask.
 - Counting Coins: The first detected contour typically corresponds to the entire image, so I ignore it. I then count contours with an area greater than 10,000 pixels, assuming they represent coins.
 - Drawing Contours: I draw the detected contours on the original image to visualize the segmented coins.
+
+## Results:
+For 2 coins:
+![Image](https://github.com/user-attachments/assets/7f14aee4-7f58-492a-952a-9b6ff6292916)
 
 # Q2: Creating a stitched panorama from multiple overlapping images
 
