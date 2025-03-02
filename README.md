@@ -33,7 +33,7 @@ The problem involved segmenting and counting the number of coins in an image usi
 
 This approach involves stitching together a series of images to create a panorama. The methodology utilizes the SIFT feature detector and BFMatcher to match features between images and then computes the homography matrix to stitch the images together.
 
-##Methodology
+## Methodology
 - Image Loading: Images are loaded from a specified directory.
 - SIFT Feature Detection: SIFT keypoints and descriptors are detected for each image. This helps in finding distinctive features that can be matched across images.
 - Matching Features: BFMatcher is used to match descriptors between consecutive images, and good matches are selected based on distance.
