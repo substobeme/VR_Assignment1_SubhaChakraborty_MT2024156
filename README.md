@@ -16,7 +16,7 @@ pip install opencv-python numpy matplotlib
 ## Overview
 The problem involved segmenting and counting the number of coins in an image using OpenCV. The approach includes grayscale conversion, smoothing, thresholding, edge detection, and contour detection to identify coin boundaries.
 
-## Methodology
+##  Methodology
 - Image Loading: I load the image in color and convert it to RGB format for proper visualization in Matplotlib.
 - Grayscale Conversion: I convert the image to grayscale to simplify processing, as color is not required for segmentation.
 - Gaussian Blur: I apply a 5x5 Gaussian kernel to smoothen the image, reducing noise and minor variations that could affect thresholding.
