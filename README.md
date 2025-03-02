@@ -48,6 +48,11 @@ This approach involves stitching together a series of images to create a panoram
 - Image Stitching: The images are warped and blended to create a seamless panorama.
 - Cropping Black Regions: After stitching, black regions (from the warping process) are cropped out to ensure the final image only contains the relevant content.
 
+## Result
+Final panorama:
+
+![Image](https://github.com/user-attachments/assets/00b02269-f039-497f-919d-5151250fd228)
+
 
 
 
