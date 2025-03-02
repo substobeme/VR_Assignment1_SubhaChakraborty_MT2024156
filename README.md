@@ -1,4 +1,4 @@
-#Requirements
+# Requirements
 Ensure you have the following dependencies installed:
 
 Python 3.x
@@ -11,11 +11,11 @@ bash
 Copy
 Edit
 pip install opencv-python numpy matplotlib
-#Q1: Coin Segmentation using OpenCV
-##Overview
+# Q1: Coin Segmentation using OpenCV
+## Overview
 The problem involved segmenting and counting the number of coins in an image using OpenCV. The approach includes grayscale conversion, smoothing, thresholding, edge detection, and contour detection to identify coin boundaries.
 
-##Methodology
+## Methodology
 Image Loading: I load the image in color and convert it to RGB format for proper visualization in Matplotlib.
 Grayscale Conversion: I convert the image to grayscale to simplify processing, as color is not required for segmentation.
 Gaussian Blur: I apply a 5x5 Gaussian kernel to smoothen the image, reducing noise and minor variations that could affect thresholding.
@@ -26,9 +26,9 @@ Sorting Contours by Area: I sort the detected contours in descending order based
 Counting Coins: The first detected contour typically corresponds to the entire image, so I ignore it. I then count contours with an area greater than 10,000 pixels, assuming they represent coins.
 Drawing Contours: I draw the detected contours on the original image to visualize the segmented coins.
 
-#Q2: Creating a stitched panorama from multiple overlapping images
+# Q2: Creating a stitched panorama from multiple overlapping images
 
-##Overview
+## Overview
 
 This approach involves stitching together a series of images to create a panorama. The methodology utilizes the SIFT feature detector and BFMatcher to match features between images and then computes the homography matrix to stitch the images together.
 
@@ -39,11 +39,7 @@ Matching Features: BFMatcher is used to match descriptors between consecutive im
 Homography Calculation: Using the matched keypoints, a homography matrix is computed using RANSAC, which aligns the images based on their feature points.
 Image Stitching: The images are warped and blended to create a seamless panorama.
 Cropping Black Regions: After stitching, black regions (from the warping process) are cropped out to ensure the final image only contains the relevant content.
-Results and Observations
-The images are successfully stitched together, creating a panorama.
-Keypoints are detected and matched between consecutive images.
-Homography computation aligns images based on feature matching.
-The final panorama is cropped to remove unnecessary black regions, providing a clean result.
-The process is visualized step by step using matplotlib for clarity.
+
+
 
 
